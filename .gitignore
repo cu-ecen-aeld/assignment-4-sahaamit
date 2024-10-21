@@ -2,3 +2,6 @@
 build/
 .vscode/
 *.log
+
+aeld_id_rsa_nopassphrase
+aeld_id_rsa_nopassphrase.pub
