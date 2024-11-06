@@ -15,8 +15,8 @@ AESD_ASSIGNMENTS_SITE_METHOD = git
 AESD_ASSIGNMENTS_GIT_SUBMODULES = YES
 
 define AESD_ASSIGNMENTS_BUILD_CMDS
-    $(MAKE) clean $(TARGET_CONFIGURE_OPTS) CROSS_COMPILE=aarch64-none-linux-gnu- -C $(@D)/finder-app
-	$(MAKE) $(TARGET_CONFIGURE_OPTS) CROSS_COMPILE=aarch64-none-linux-gnu- -C $(@D)/finder-app
+    $(MAKE) clean $(TARGET_CONFIGURE_OPTS) CROSS_COMPILE=aarch64-buildroot-linux-gnu- -C $(@D)/finder-app
+	$(MAKE) $(TARGET_CONFIGURE_OPTS) CROSS_COMPILE=aarch64-buildroot-linux-gnu- -C $(@D)/finder-app
 endef
 
 # TODO add your writer, finder and finder-test utilities/scripts to the installation steps below
